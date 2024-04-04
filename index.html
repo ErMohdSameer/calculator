@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="outer">
+        
+        <table >
+            <tr>
+                <td colspan="3">
+
+                <input type="text" id="answer" name="op">
+                </td>
+                <td>
+                    <input type="button" value="C" id="c" onclick="clear('')">
+                </td>
+            </tr>
+
+            <tr> 
+                <td><input type="button" value="1"  onclick="solve('1')"></td> 
+                <td><input type="button" value="2" onclick="solve('2')"></td> 
+                <td><input type="button" value="3" onclick="solve('3')"></td> 
+                <td><input type="button" value="/" onclick="solve('/')"></td> 
+                
+            </tr> 
+            <tr> 
+                <td><input type="button" value="4" onclick="solve('4')"></td> 
+                <td><input type="button" value="5" onclick="solve('5')"></td> 
+                <td><input type="button" value="6" onclick="solve('6')"></td> 
+                <td><input type="button" value="*" onclick="solve('*')"></td> 
+            </tr> 
+            <tr> 
+                <td><input type="button" value="7" onclick="solve('7')"></td> 
+                <td><input type="button" value="8" onclick="solve('8')"></td> 
+                <td><input type="button" value="9" onclick="solve('9')"></td> 
+                <td><input type="button" value="-" onclick="solve('-')"></td> 
+            </tr> 
+            <tr> 
+                <td><input type="button" value="0" onclick="solve('0')"></td> 
+                <td><input type="button" value="." onclick="solve('.')"></td> 
+                <td><input type="button" value="=" id="eq" onclick="result('=')"></td> 
+                <td><input type="button" value="+" onclick="solve('+')"></td> 
+            </tr> 
+        </table>
+    </div>
+</body>
+</html>
